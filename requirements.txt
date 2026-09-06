@@ -1,0 +1,18 @@
+# Core data packages
+pandas
+numpy
+scipy
+
+# Visualization
+matplotlib
+seaborn
+plotly
+
+# Machine learning
+scikit-learn
+
+# Notebooks
+jupyter
+
+# Model deployment demo (only needed for M2 notebook 3)
+gradio
