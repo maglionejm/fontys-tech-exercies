@@ -16,3 +16,9 @@ jupyter
 
 # Model deployment demo (only needed for M2 notebook 3)
 gradio
+
+# Prediction APIs (only needed for M3 notebooks 2 and 3)
+fastapi
+uvicorn
+httpx
+requests
