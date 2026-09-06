@@ -74,6 +74,22 @@ All datasets are small, public, and load automatically — no downloads to manag
 - **Palmer Penguins, tips, Anscombe's quartet** — loaded through `seaborn.load_dataset()`
 - **Gapminder** — bundled with Plotly, no download needed
 
+## Repository layout
+
+Every file in this repository has a job — there is nothing else to install or configure:
+
+```
+fontys-tech-exercies/
+├── M1 - Descriptive analytics/            3 notebooks
+├── M2 - Machine Learning/                 3 notebooks
+├── M3 - ML Architectures and Deployment/  3 notebooks
+├── README.md                              this guide
+├── requirements.txt                       one-command install for running locally
+└── .gitignore                             keeps generated files out of git
+```
+
+When you run the notebooks, they create an `outputs/` folder next to themselves (cleaned data, saved models, dashboards, deployment files). Those files are yours to keep or delete — the notebooks recreate them on every run.
+
 ## Good to know
 
 - **No secrets, no accounts.** Nothing in this repo needs an API key, a `.env` file, or a login. Every notebook runs fully without any account. The only optional accounts are for the *publish to the internet* follow-along guides: a free Hugging Face account (M2 notebook 3) and free-tier Google Cloud / AWS accounts (M3 notebook 2) — those steps live in the guides, not in the code. Never paste tokens or passwords into notebooks.
