@@ -26,11 +26,11 @@ The three notebooks tell one continuous story — predicting Titanic survival �
 
 ### M3 - ML Architectures and Deployment
 
-Goes deeper: what is inside the models, how to run them in a real cloud, and how applications actually use them. Each notebook is self-contained.
+Goes deeper: how machine learning fits into real tech architectures, how to run models in a real cloud, and how applications actually use them. Each notebook is self-contained.
 
 | # | Notebook | What you learn | Open in Colab |
 |---|----------|----------------|---------------|
-| 1 | [Machine learning architectures](M3%20-%20ML%20Architectures%20and%20Deployment/01-machine-learning-architectures.ipynb) | Opening the black boxes: linear models, trees and ensembles, and neural networks built up from a single neuron — with decision-boundary visuals for every architecture, plus a plain-language tour of CNNs, RNNs and Transformers | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/maglionejm/fontys-tech-exercies/blob/main/M3%20-%20ML%20Architectures%20and%20Deployment/01-machine-learning-architectures.ipynb) |
+| 1 | [ML system architectures](M3%20-%20ML%20Architectures%20and%20Deployment/01-ml-system-architectures.ipynb) | The components around a model that turn it into a product: data and training pipelines, model registries, the four serving patterns (batch, real-time API, streaming, embedded), drift monitoring and the retraining loop, where ML sits in a product architecture, and build vs buy — every component simulated with working code | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/maglionejm/fontys-tech-exercies/blob/main/M3%20-%20ML%20Architectures%20and%20Deployment/01-ml-system-architectures.ipynb) |
 | 2 | [Deploying models in the cloud](M3%20-%20ML%20Architectures%20and%20Deployment/02-deploying-models-in-the-cloud.ipynb) | Turning a model into a real prediction API with FastAPI, testing it before shipping, packaging it with Docker, and deploying the same container to Google Cloud Run and AWS App Runner — with step-by-step walkthroughs, cost hygiene and cleanup | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/maglionejm/fontys-tech-exercies/blob/main/M3%20-%20ML%20Architectures%20and%20Deployment/02-deploying-models-in-the-cloud.ipynb) |
 | 3 | [Consuming models from applications](M3%20-%20ML%20Architectures%20and%20Deployment/03-consuming-models-from-applications.ipynb) | The last mile: calling a model API from Python with timeouts, error handling and retries; batch prediction; a working web page that calls the model; CORS; and how third-party AI APIs (and their keys) fit in — the notebook runs a real local server and consumes it over real HTTP | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/maglionejm/fontys-tech-exercies/blob/main/M3%20-%20ML%20Architectures%20and%20Deployment/03-consuming-models-from-applications.ipynb) |
 
@@ -70,10 +70,9 @@ Then open any notebook and run it top to bottom. Each notebook is independent �
 
 All datasets are small, public, and load automatically — no downloads to manage:
 
-- **Titanic passenger list** — loaded from a public GitHub URL (used in M1 notebook 1, all of M2 and M3 notebooks 2-3)
+- **Titanic passenger list** — loaded from a public GitHub URL (used in M1 notebook 1 and throughout M2 and M3)
 - **Palmer Penguins, tips, Anscombe's quartet** — loaded through `seaborn.load_dataset()`
 - **Gapminder** — bundled with Plotly, no download needed
-- **Handwritten digits and synthetic shapes (moons)** — bundled with scikit-learn, no download needed (M3 notebook 1)
 
 ## Good to know
 
